@@ -3,34 +3,26 @@ import { View,Text,StyleSheet,TouchableOpacity } from "react-native";
 import { Actions } from 'react-native-router-flux';
 
 
-export default class Herder extends Component{
-    Sell(){
-        Actions.Sell()
+export default class Footer extends Component{
+    manu(){
+        Actions.Manu()
+    }
+    main(){
+        Actions.main()
     }
     render(){
         return(
-            
             <View style={styles.Option}>
-                    <TouchableOpacity style={styles.Botton} >
+                    <TouchableOpacity onPress={this.main} style={styles.Botton} >
                         <Text style={styles.Icon} >
                             ขาย
                         </Text>
                     </TouchableOpacity>
-                    <TouchableOpacity onPress={this.Sell} style={styles.Botton} >
+                    <TouchableOpacity onPress={this.manu} style={styles.Botton} >
                         <Text style={styles.Icon}>
-                            รายได้
+                            เมนู
                         </Text>
                     </TouchableOpacity>
-                    <TouchableOpacity style={styles.Botton} >
-                        <Text style={styles.Icon}>
-                            สินค้า
-                        </Text>
-                    </TouchableOpacity >
-                    <TouchableOpacity style={styles.Botton} >
-                        <Text style={styles.Icon}>
-                            ยอดขาย
-                        </Text>
-                    </TouchableOpacity >
                 </View>
         )
     }
@@ -43,7 +35,7 @@ const styles = StyleSheet.create({
         backgroundColor:'#FA8072',
         flexDirection:"row",
         borderTopWidth:1,
-        borderColor:"#fa8072",
+        borderColor:"#ff584f",
         
         
         
