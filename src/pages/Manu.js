@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { View,Text,StyleSheet,TouchableOpacity } from "react-native";
 import {Actions} from 'react-native-router-flux';
 
-import Header from './Header';
-import Footer from './Footer';
+import Header from '../component/Header';
+import Footer from '../component/Footer';
 export default class Manu extends Component{
     Add(){
         Actions.Add()

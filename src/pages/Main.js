@@ -10,7 +10,7 @@ import { View,
 import {Actions} from 'react-native-router-flux';
 
 
-import Footer from './Footer';
+import Footer from '../component/Footer';
 export default class ThungTorn extends Component {
 Modify(){
     Actions.Modify()

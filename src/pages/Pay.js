@@ -5,7 +5,7 @@ import { View,
         TouchableOpacity,
         TextInput,KeyboardType
  } from 'react-native'
-import Backheader from './Backheader';
+import Backheader from '../component/Backheader';
  export default class Pay extends Component{
     
      render(){

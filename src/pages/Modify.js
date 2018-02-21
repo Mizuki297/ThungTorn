@@ -8,7 +8,7 @@ import {
 } from 'react-native';
 import { Actions } from 'react-native-router-flux';
 
-import Backheader from './Backheader';
+import Backheader from '../component/Backheader';
 export default class Modify extends Component{
     goBack(){
         Actions.pop()
